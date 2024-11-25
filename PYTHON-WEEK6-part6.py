@@ -2,9 +2,16 @@
 [Hint: Use nested loops, break and continue]
 '''
 i=900
-num=2
 while i<=1000:
-    if(i==num):
-        continue
-    while 
+    count=0
+    num=2
+    while num<=1000:
+        if i%num==0:
+            count+=1
+            if count==2:
+                break
+        num+=1
+        
+    if count<2:
+        print(i)    
     i+=1
