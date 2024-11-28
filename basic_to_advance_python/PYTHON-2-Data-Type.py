@@ -4,4 +4,4 @@ alpabets='hello world'
 height=6.0
 print(type(height))   #float
 print(type(alpabets)) #string
-print(type(number))   #integer
+print(type(number))   #
