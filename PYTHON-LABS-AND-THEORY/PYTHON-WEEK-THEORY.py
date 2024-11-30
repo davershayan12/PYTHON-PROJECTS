@@ -1,4 +1,5 @@
 def common_gcd(x,y):
+   result=1
    a=[]
    b=[]
    c=[]
@@ -14,7 +15,6 @@ def common_gcd(x,y):
         i=2
         continue
     i+=1
-    j=0
     if ans==1:
      break
    j=0
@@ -29,17 +29,17 @@ def common_gcd(x,y):
     i+=1
     if ans1==1:
         break
-   print(b)
    print(a)
+   print(b)
    r=0 
-   for i in range(min(len(a)-1,len(b)-1)):
-       for j in range(max(len(a)-1,len(b)-1)):
+   for i in range(len(a)):
+       for j in range(len(b)):
           if a[i]==b[j]:
-            c.append(a[r])
+            c.append(a[i])
             r+=1
             break
-   result=0
-   for 
-   return c
+   for i in range(len(c)):
+       result*=c[i]
+   return result
    
-print(common_gcd(60,36))
+print(common_gcd(30,15))
