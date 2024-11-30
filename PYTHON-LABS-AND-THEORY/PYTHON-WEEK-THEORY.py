@@ -29,8 +29,6 @@ def common_gcd(x,y):
     i+=1
     if ans1==1:
         break
-   print(a)
-   print(b)
    r=0 
    for i in range(len(a)):
        for j in range(len(b)):
@@ -42,4 +40,4 @@ def common_gcd(x,y):
        result*=c[i]
    return result
    
-print(common_gcd(30,15))
+print(common_gcd(40,20))
