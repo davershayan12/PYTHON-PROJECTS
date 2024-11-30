@@ -1,0 +1,43 @@
+def common_gcd(x,y):
+   a=[]
+   b=[]
+   c=[]
+   ans=x
+   ans1=y
+   j=0
+   i=2
+   while True:
+    if ans%i==0:
+        ans=int(ans/i)
+        a.append(i)
+        j+=1
+        i=2
+        continue
+    i+=1
+    j=0
+    if ans==1:
+     break
+   j=0
+   i=2
+   while True:
+    if ans1%i==0:
+        ans1=int(ans1/i)
+        b.append(i)
+        j+=1
+        i=2
+        continue
+    i+=1
+    if ans1==1:
+        break
+   print(b)
+   print(a)
+   r=0 
+   for i in range(min(len(a)-1,len(b)-1)):
+       for j in range(max(len(a)-1,len(b)-1)):
+          if a[i]==b[j]:
+            c.append(a[r])
+            r+=1
+            break
+   return c
+   
+print(common_gcd(60,36))
