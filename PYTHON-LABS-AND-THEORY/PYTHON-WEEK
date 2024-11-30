@@ -38,6 +38,8 @@ def common_gcd(x,y):
             c.append(a[r])
             r+=1
             break
+   result=0
+   for 
    return c
    
 print(common_gcd(60,36))
