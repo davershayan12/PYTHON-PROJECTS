@@ -3,32 +3,32 @@ def common_gcd(x,y):
    a=[]
    b=[]
    c=[]
-   ans=x
-   ans1=y
    j=0
    i=2
    while True:
-    if ans%i==0:
-        ans=int(ans/i)
+    if x%i==0:
+        x=int(x/i)
         a.append(i)
         j+=1
         i=2
         continue
     i+=1
-    if ans==1:
+    if x==1:
      break
    j=0
    i=2
    while True:
-    if ans1%i==0:
-        ans1=int(ans1/i)
+    if y%i==0:
+        y=int(y/i)
         b.append(i)
         j+=1
         i=2
         continue
     i+=1
-    if ans1==1:
+    if y==1:
         break
+   print(a)
+   print(b)
    r=0 
    for i in range(len(a)):
        for j in range(len(b)):
@@ -40,4 +40,4 @@ def common_gcd(x,y):
        result*=c[i]
    return result
    
-print(common_gcd(40,20))
+print(common_gcd(30,15))
