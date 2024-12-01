@@ -27,8 +27,6 @@ def common_gcd(x,y):
     i+=1
     if y==1:
         break
-   print(a)
-   print(b)
    r=0 
    for i in range(len(a)):
        for j in range(len(b)):
