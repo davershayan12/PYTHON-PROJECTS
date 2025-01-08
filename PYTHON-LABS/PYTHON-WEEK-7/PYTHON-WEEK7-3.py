@@ -1,4 +1,4 @@
-'''3.	Write a Python program to find GCD of two numbers.'''
+'''3.    Write a Python program to find GCD of two numbers.'''
 def common_gcd(x,y):
    val1=y
    val2=x  
@@ -28,7 +28,7 @@ def common_gcd(x,y):
         break
    r=0 
    for i in range(len(a)):
-       for j in range(len(b)):
+       for j in range(r,len(b)):
           if a[i]==b[j]:
             c.append(a[i])
             r+=1
@@ -37,4 +37,4 @@ def common_gcd(x,y):
        result*=c[i]
    return f'{result} is gcd of {x} and {y}'
    
-print(common_gcd(30,30))
+print(common_gcd(100,80))
