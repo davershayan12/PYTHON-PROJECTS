@@ -6,25 +6,21 @@ def common_gcd(x,y):
    a=[]
    b=[]
    c=[]
-   j=0
    i=2
    while True:
     if val1%i==0:
         val1=int(val1/i)
         a.append(i)
-        j+=1
         i=2
         continue
     i+=1
     if val1==1:
      break
-   j=0
    i=2
    while True:
     if val2%i==0:
         val2=int(val2/i)
         b.append(i)
-        j+=1
         i=2
         continue
     i+=1
@@ -41,4 +37,4 @@ def common_gcd(x,y):
        result*=c[i]
    return f'{result} is gcd of {x} and {y}'
    
-print(common_gcd(30,15))
+print(common_gcd(30,30))
