@@ -1,4 +1,4 @@
-# Initial guest list
+# Initial guest list.
 member = ['David', 'Tanzeel', 'Umer']
 
 # Inviting guests
