@@ -32,3 +32,16 @@
 #     for i in range(3):
        
 #        print(f"{value[i]}")
+import re
+
+def replace_with_regex(file_path, pattern, replacement):
+    with open(file_path, 'r') as file:
+        content = file.read()
+    
+    updated_content = re.sub(pattern, replacement, content)
+    
+    with open(file_path, 'w') as file:
+        file.write(updated_content)
+
+replace_with_regex('example.txt', r'\bword\b', 'replacement')
+
