@@ -31,17 +31,16 @@
 #     print(f"{key} favourite place is:")
 #     for i in range(3):
        
-#        print(f"{value[i]}")
-import re
-
-def replace_with_regex(file_path, pattern, replacement):
-    with open(file_path, 'r') as file:
-        content = file.read()
+# #        print(f"{value[i]}")
+# a = np.array([])
+# b=[]
+# n=[]
+# for i in range(6):
     
-    updated_content = re.sub(pattern, replacement, content)
-    
-    with open(file_path, 'w') as file:
-        file.write(updated_content)
-
-replace_with_regex('example.txt', r'\bword\b', 'replacement')
-
+#     if i==0 or i==1 or i==5:
+#       for j in range(10):
+#         n.append(i)
+# a=np.append(n,b)  
+# print(a)
+import numpy as np
+print(np.arange(2,11).reshape(3,3))

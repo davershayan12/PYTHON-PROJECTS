@@ -1,0 +1,3 @@
+var, account_balance, client_namevar = 1
+ account_balance = 1000.0
+client_name = 'John Doe'
