@@ -4,8 +4,50 @@
 # except TypeError:
 #     print('its Type error')
 
-a = 'STRING nice'
-print(a.title())
+# math = {'Alice': 85, 'Bob': 90, 'Charlie': 78}
+# sci = {'Alice': 92, 'Bob': 88, 'David': 75}
+
+# avg = {}
+
+# for i in math.keys():
+#     if i in sci.keys():
+#         avg[i] = (math[i] + sci[i]) / 2
+#     else:
+#         avg[i] = math[i] / 2
+
+# for j in sci.keys():
+#     if j not in math.keys():
+#         avg[j] = sci[j] / 2
+# print(avg)
+
+# product = {'apple': 2, 'banana': 1, 'orange': 3, 'grapes': 5}
+# nproduct = {}
+# for i in product.keys():
+#     nproduct[i] = product[i] + (product[i]*0.1)
+    
+# math = {'Alice': 90, 'Bob': 80, 'Charlie': 78}
+# eng = {'Alice': 85, 'Bob': 75, 'David': 93}
+
+# new = {}
+
+# for i in math.keys():
+#     if i in eng.keys():
+#         new[i] = [math[i], eng[i]]
+#     else:
+#         new[i] = [math[i], 0]
+
+# for i in eng.keys():
+#     if i not in math.keys():
+#         new[i] = [0, eng[i]]
+# print(new)
+
+try:
+    data = [10, 20, 'abc', 30, 'xyz', 40]
+    for i in data:
+        print(int(i))
+except ValueError:
+    print('Invalid Input')
+
 # i = 0
 # while i < len(a):
 #     c = a[i]
