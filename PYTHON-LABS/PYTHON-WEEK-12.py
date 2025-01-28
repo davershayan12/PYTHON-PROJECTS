@@ -3,6 +3,15 @@
 #     a[0] = "x"
 # except TypeError:
 #     print('its Type error')
+
+a = 'STRING nice'
+print(a.title())
+# i = 0
+# while i < len(a):
+#     c = a[i]
+#     print(c)
+#     i+=i + 1
+
 # def my_function(x):
 #     return x[::-1]
 
