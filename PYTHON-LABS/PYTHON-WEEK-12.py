@@ -36,17 +36,34 @@
 #     else:
 #         new[i] = [math[i], 0]
 
+m_g={'alice':90,'bob':80,'charlie':70}
+e_g={'alice':30,'bob':70,'David':70}
+
+new={}
+for d in [m_g,e_g]:
+    for key,value in d.items():
+        if key not in new:
+            new[key]=[value]
+        else:
+            new[key].append(value)
+            
+
+
+new["David"].insert(0,0)
+new["charlie"].append(0)
+print(new)
+
 # for i in eng.keys():
 #     if i not in math.keys():
 #         new[i] = [0, eng[i]]
 # print(new)
 
-try:
-    data = [10, 20, 'abc', 30, 'xyz', 40]
-    for i in data:
-        print(int(i))
-except ValueError:
-    print('Invalid Input')
+# try:
+#     data = [10, 20, 'abc', 30, 'xyz', 40]
+#     for i in data:
+#         print(int(i))
+# except ValueError:
+#     print('Invalid Input')
 
 # i = 0
 # while i < len(a):
