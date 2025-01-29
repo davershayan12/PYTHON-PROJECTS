@@ -36,22 +36,136 @@
 #     else:
 #         new[i] = [math[i], 0]
 
-m_g={'alice':90,'bob':80,'charlie':70}
-e_g={'alice':30,'bob':70,'David':70}
+# m_g={'alice':90,'bob':80,'charlie':70}
+# e_g={'alice':30,'bob':70,'David':70}
 
-new={}
-for d in [m_g,e_g]:
-    for key,value in d.items():
-        if key not in new:
-            new[key]=[value]
-        else:
-            new[key].append(value)
-            
+# new={}
+# for d in [m_g,e_g]:
+#     for key,value in d.items():
+#         if key not in new:
+#             new[key]=[value]
+#         else:
+#             new[key].append(value)
+# new["David"].insert(0,0)
+# new["charlie"].append(0)
+# print(new)
 
+# try:
+#     polls='poll.txt'
+#     exist=[]
+#     with open(polls, 'a') as poll:
+#         while True:
+#             name = input("name: ")
+#             language = input("language: ")
+                         
+#             if name in exist :
+#                 print("Sorry, you already poll!")
+#                 continue
+             
+#             poll.write(f"{name}: {language}\n")
+#             exist.append(name)
+#             ask = input("yes/no: ")
+#             if ask == "no":
+#                 break
+# except FileNotFoundError:
+#     print("File Not Found")
 
-new["David"].insert(0,0)
-new["charlie"].append(0)
-print(new)
+# with open('count.txt', 'r') as search:
+#     c = search.read().lower()
+
+#     ask = input("Word to search: ")
+#     num=c.count(ask)  
+#     print(num)
+
+# describe_city(city="alsaka", country="canda") 
+
+# L = [5, 8, 1, 9, 2, 17, 21, 10]
+
+# while True:
+#     con = False
+#     for i in range(len(L) - 1):
+#         if L[i] >= L[i + 1]:
+#             L[i], L[i + 1] = L[i + 1], L[i]
+#             con = True
+#     if con == False:
+#         break
+# print(L)
+
+# l = [ "c","d","a","A","Y"]
+# while True:
+#     swap = False
+#     for i in range(len(l)-1):
+#         if l[i]> l[i+1]:
+#             l[i],l[i+1] = l[i+1],l[i]
+#             swap=True
+#     if swap == False:
+#          break
+# print(l)
+
+# l = ["c", "d", "a", "A", "Y"]
+# while True:
+#     swap = False
+#     for i in range(len(l) - 1):
+#         if l[i] > l[i + 1]:
+#             l[i], l[i + 1] = l[i + 1], l[i]
+#             swap = True
+#     if swap == False:
+#         break
+# print(l)
+
+# student = {}
+# ff = open('Student.txt', 'r')
+# for i in ff:
+#     a = i.split(',')
+#     student[a[0]] = int(a[1]) 
+
+# avg = 0
+# for i in student:
+#     avg = avg + student[i]
+# avg = avg / len(student)
+
+# print(avg) 
+# top_student = []
+
+# for name, marks in student.items():
+#     if marks > 85:
+#         top_student.append(name)
+# with open('top_student.txt', 'w') as topStudent:
+#     for i in top_student:
+#         topStudent.write(i + '\n')
+
+# sentence = input('sentence: ')
+
+# a_z = sentence.count('a')
+# e_z = sentence.count('e')
+# i_z = sentence.count('i')
+# o_z = sentence.count('o')
+# u_z = sentence.count('u')
+
+# total_z = a_z + e_z + i_z + o_z + u_z
+
+# print("total:", total_z)
+
+# tup_z = tuple(sentence.split())
+
+# sorted_sentence = sorted(tup_z)
+
+# print(sorted_sentence)
+
+# Store = {}
+
+# n = int(input("Enter the number of students: "))
+
+# for i in range(n):
+#     name = input(' name and marks:').split()
+#     Store[name[0]] = int(name[1])
+
+# print("Highest test score:", max(Store.values()))
+
+# Sorted = dict(sorted(Store.items()))
+
+# print("Sorted:", Sorted)
+
 
 # for i in eng.keys():
 #     if i not in math.keys():
