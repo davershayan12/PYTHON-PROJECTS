@@ -166,6 +166,46 @@
 
 # print("Sorted:", Sorted)
 
+# medicines = {
+#     "Centrum": [
+#         {"name": "Vitamin C", "strength": "500mg", "dosage": "1 tablet daily"},
+#         {"name": "Zinc Plus", "strength": "10mg", "dosage": "1 capsule daily"}
+#     ],
+#     "Belle Vie": [
+#         {"name": "Omega 3", "strength": "1000mg", "dosage": "1 softgel daily"},
+#         {"name": "Calcium", "strength": "600mg", "dosage": "1 tablet daily"},
+#         {"name": "Iron", "strength": "50mg", "dosage": "1 capsule daily"},
+#         {"name": "Vitamin D", "strength": "400IU", "dosage": "1 drop daily"}
+#     ],
+#     "Mascon": [
+#         {"name": "Multivitamin", "strength": "750mg", "dosage": "1 tablet daily"},
+#         {"name": "Folic Acid", "strength": "5mg", "dosage": "1 tablet daily"}
+#     ]
+# }
+
+str=(1,3,5,7)
+list_enumerate=list(enumerate(str))
+print("list enumerate:", list_enumerate)
+
+
+
+# import random
+# res = [random.randrange(1, 50, 1) for i in range(7)]
+# print ("Random number list is : " +str(res))
+# list=[]
+# for i in range(10):
+#  r=random.randint(1,100)
+#  if r not in list: 
+#      list.append(r)
+# print(random.choices(list,k=3)) 
+# st = ["1mg"]
+# medicines["GNC"] = [
+#     {"name": "Protein Supplement", "strength": "", "dosage": "2 scoops daily"}
+# ]
+# del(medicines["Belle Vie"][3])
+# print(medicines)# Assign the first value from the list to the medicine's strength
+
+
 
 # for i in eng.keys():
 #     if i not in math.keys():
